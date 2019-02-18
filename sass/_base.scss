@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,500;subset=latin,latin-ext');
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+@import 'variables';
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a {
+   transition: 350ms;
+   text-decoration: none;
+
+   &:link {
+      color: $color--link;
+   }
+
+   &:visited {
+      color: $color--hover;
+   }
+
+   &:hover {
+      color: $color--hover;
+   }
+}
+
+.no-quotes {
+   &::before,
+   &::after {
+      content: none;
+   }
+}

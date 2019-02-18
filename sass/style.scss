@@ -1,0 +1,170 @@
+@import 'base';
+@import 'variables';
+
+header {
+   background: url('../img/IMG_1544.JPG') 0 0 / cover;
+   height: 267px;
+
+   p {
+      margin: auto;
+      padding-top: 0;
+      width: 300px;
+      font-size: 18px;
+      font-weight: 300;
+
+      > span {
+         margin: 0;
+         padding: 10px;
+      }
+   }
+
+   span {
+      display: inline-block;
+      opacity: .8;
+      background-color: $background-color--header;
+      padding: 24px;
+
+      @media (max-width: 600px) {
+         padding: 12px;
+      }
+   }
+}
+
+h1 {
+   color: $color--headings;
+   font-size: 48px;
+
+   @media (max-width: 768px) {
+      font-size: 36px;
+   }
+
+   @media (max-width: 600px) {
+      font-size: 24px;
+   }
+}
+
+h1,
+p {
+   padding-top: 24px;
+   text-align: center;
+}
+
+h2 {
+   margin-bottom: 12px;
+   font-size: 1.175rem;
+   font-weight: 500;
+   hanging-punctuation: first;
+
+   &::before {
+      content: '“';
+   }
+
+   &::after {
+      content: '”';
+   }
+
+   @media (max-width: 768px) {
+      font-size: 1rem;
+   }
+}
+
+.images {
+   display: flex;
+   flex-wrap: wrap;
+
+   &--item {
+      position: relative;
+      width: 33.333333%;
+      line-height: 0;
+
+      @media (max-width: 600px) {
+         width: 100%;
+      }
+
+      &__image {
+         width: 100%;
+      }
+
+      &__content {
+         position: absolute;
+         bottom: 10px;
+         left: 0;
+         opacity: .8;
+         background-color: $background-color--content;
+         padding: 8px 16px;
+         height: auto;
+         line-height: 1.4;
+
+         @media (max-width: 768px) {
+            padding: 4px 8px;
+            font-size: 14px;
+         }
+      }
+   }
+}
+
+table {
+   font-size: 14px;
+}
+
+th {
+   text-align: left;
+   font-weight: 500;
+}
+
+td {
+   padding-left: 8px;
+   font-weight: 300;
+
+   @media (max-width: 768px) {
+      padding-left: 4px;
+   }
+}
+
+td,
+th {
+   padding: {
+      top: 4px;
+      bottom: 4px;
+   }
+
+   @media (max-width: 768px) {
+      padding: {
+         top: 0;
+         bottom: 0;
+      }
+   }
+}
+
+.half {
+   width: 50%;
+
+   @media (max-width: 600px) {
+      width: 100%;
+   }
+}
+
+.full {
+   width: 100%;
+}
+
+.info {
+   right: 0;
+   left: auto;
+   width: 30%;
+
+   @media (max-width: 600px) {
+      right: auto;
+      left: 0;
+      width: 90%;
+   }
+
+   > p {
+      text-align: left;
+      font-weight: 300;
+
+      @media (max-width: 600px) {
+         font-size: 12px;
+      }
+   }
+}
